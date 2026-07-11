@@ -1,0 +1,6 @@
+<appEvents>
+
+  <appEvent eventName='GetEmailEvent' eventDescription='Get Email for gator@sw-builder.com' objName='getEmailEvent'>
+  </appEvent>
+
+</appEvents>

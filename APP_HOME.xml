@@ -1,0 +1,3 @@
+<appHome>
+  <home appName="security" appDesc="Security Home" appPng="security_logo.png" appHomeURL="&lt;%= httpRoot %&gt;/security/do?op=Home"/>
+</appHome>
