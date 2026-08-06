@@ -1,6 +1,6 @@
 <appTables>
 
-  <appTable displayName='Phone' objPlural='phones' classPlural='Phones' objName='phone' className='Phone' dbName='PHONE' fileName='phone' codeType=''>
+  <appTable displayName='Phone' objPlural='phones' classPlural='Phones' objName='phone' className='Phone' dbName='PHONE' fileName='phone'>
     <appField displayName='Name' dbName='NAME' classFieldName='Name' objFieldName='name' fieldType='String' fieldSize='20' codeType='String' listFlag='yes' listOrder='2' blobNameFld='' scale='' format='%s' classPlural=''/>
     <appField displayName='CameraPhoto' dbName='CAMERA_PHOTO' classFieldName='CameraPhoto' objFieldName='cameraPhoto' fieldType='Integer' fieldSize='1' codeType='Thumbnail' listFlag='yes' listOrder='1' blobNameFld='' scale='' format='%d' classPlural=''/>
     <appField displayName='Running Flag' dbName='RUNNING_FLAG' classFieldName='RunningFlag' objFieldName='runningFlag' fieldType='Boolean' fieldSize='5' codeType='Boolean' listFlag='no' listOrder='3' blobNameFld='' scale='' format='' classPlural=''/>
@@ -8,7 +8,7 @@
     <appField displayName='Movements' dbName='MOVEMENT' classFieldName='Movement' objFieldName='movement' fieldType='Movement' fieldSize='0' codeType='One2ManyParent' listFlag='no' listOrder='5' blobNameFld='' scale='' format='' classPlural='Movements'/>
   </appTable>
 
-  <appTable displayName='Movement' objPlural='movements' classPlural='Movements' objName='movement' className='Movement' dbName='MOVEMENT' fileName='movement' codeType=''>
+  <appTable displayName='Movement' objPlural='movements' classPlural='Movements' objName='movement' className='Movement' dbName='MOVEMENT' fileName='movement'>
     <appField displayName='Movement Video' dbName='MOVEMENT_VIDEO' classFieldName='MovementVideo' objFieldName='movementVideo' fieldType='Integer' fieldSize='1' codeType='Video' listFlag='yes' listOrder='2' blobNameFld='' scale='' format='%d' classPlural=''/>
     <appField displayName='Movement Date' dbName='MOVEMENT_DATE' classFieldName='MovementDate' objFieldName='movementDate' fieldType='Date' fieldSize='10' codeType='DateTime' listFlag='yes' listOrder='2' blobNameFld='' scale='' format='' classPlural=''/>
     <appField displayName='Save' dbName='MOVEMENT_SAVE' classFieldName='Save' objFieldName='save' fieldType='Boolean' fieldSize='5' codeType='Boolean' listFlag='yes' listOrder='3' blobNameFld='' scale='' format='' classPlural=''/>
