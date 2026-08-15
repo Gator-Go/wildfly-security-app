@@ -1,5 +1,4 @@
 <appNames>
-  <appName newName="security" oldName="ooooo"/>
   <appName newName="security" oldName="xxxxx"/>
   <appName newName="Security" oldName="Xxxxx"/>
   <appName newName="SECURITY" oldName="XXXXX"/>
@@ -11,6 +10,7 @@
   <appPackage newPackage="com_swBuilder_security_app" oldPackage="PPP_PPP_PPP"/>
   <appAuthor newAuthor="Ron Kanengieter" oldAuthor="Aaaaa"/>
   <appAuthor newAuthor="gator@sw-builder.com" oldAuthor="aaaaa@ddddd"/>
-  <appCopyright newCopyright="Developed by sw-builder.com" oldCopyright="Lllll"/>
-
+  <appCopyright 
+    newCopyright="Copyright (c) 2026 Ron Kanengieter\n * Licensed under the MIT License[](https://opensource.org/licenses/MIT)\n * Developed by sw-builder.com" 
+    oldCopyright="Lllll"/>
 </appNames>

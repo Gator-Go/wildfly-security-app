@@ -111,7 +111,7 @@ changes.add(newData)
 
 
 
-def dir = "../Security"
+def dir = "../security"
 
 def extFiles ( theDir, changes ) {
 
@@ -148,11 +148,11 @@ def extFiles ( theDir, changes ) {
 extFiles ( dir, changes )
 
 def CheckMaxVideosEvent = new File("./CheckMaxVideosEvent.java").text
-new File("../Security/security-ejb/src/main/java/com/swBuilder/security/app/event/msg/CheckMaxVideosEvent.java").write(CheckMaxVideosEvent)
+new File("../security/security-ejb/src/main/java/com/swBuilder/security/app/event/msg/CheckMaxVideosEvent.java").write(CheckMaxVideosEvent)
 
 def CheckMaxVideosObserver = new File("./CheckMaxVideosObserver.java").text
-new File("../Security/security-ejb/src/main/java/com/swBuilder/security/app/event/CheckMaxVideosObserver.java").write(CheckMaxVideosObserver)
+new File("../security/security-ejb/src/main/java/com/swBuilder/security/app/event/CheckMaxVideosObserver.java").write(CheckMaxVideosObserver)
 
 def src = new File("../security_logo.png").newDataInputStream()
-def dst = new File("../Security/security-war/src/main/webapp/resources/gfx/logo.png").newDataOutputStream()
+def dst = new File("../security/security-war/src/main/webapp/resources/gfx/logo.png").newDataOutputStream()
 dst << src
