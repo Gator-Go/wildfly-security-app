@@ -2,5 +2,7 @@
 
   <appEvent eventName='GetEmailEvent' eventDescription='Get Email for gator@sw-builder.com' objName='getEmailEvent'>
   </appEvent>
+  <appEvent eventName='CheckMaxVideosEvent' eventDescription='delete videos if more than max videos setting' objName='checkMaxVideosEvent'>
+  </appEvent>
 
 </appEvents>
