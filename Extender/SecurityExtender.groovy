@@ -1,8 +1,5 @@
 /**
- * NOTE: The code in this script was created on Windows.
- * Groovy multiline strings always use \n internally.
- * We normalize both the file content and the markers to \n before replacing
- * so the match succeeds whether the Java sources have \n or \r\n.
+ * This code extends the basic build to include new files and new code.
  */
 
 class MyData {
@@ -13,7 +10,8 @@ class MyData {
 
 def changes = []
 
-// ******** Change to delete videos ********
+// ******** New code changes ********
+// ******** Change to delete videos and thumbnails ********
 changes << new MyData(
     theFile: "MovementService.java",
     extMarker: """
@@ -37,8 +35,8 @@ changes << new MyData(
             em.merge(movement);
 """
 )
-// ******** Done ********
 
+// ******** Process code changes ********
 def normalize(String text) {
     text.replaceAll(/\r\n|\r/, "\n")
 }
@@ -66,6 +64,7 @@ def processFiles(File dir, List<MyData> changes) {
 
 processFiles(new File("../security"), changes)
 
+// ******** Include new files ********
 // Copy observer class
 new File("../security/security-ejb/src/main/java/com/swBuilder/security/app/event/CheckMaxVideosObserver.java")
     .text = new File("./CheckMaxVideosObserver.java").text
