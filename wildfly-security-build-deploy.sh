@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/../.." && pwd)"   # ~/wildfly
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"   # ~/wildfly
 APP="$ROOT/wildfly-security-app"
 BUILDER="$ROOT/wildfly-builder"
 
